@@ -6,8 +6,7 @@
  */
 import java.awt.*;
 import java.awt.event.*;
-import javax.swing.*;
-public class Paddle extends JComponent implements KeyListener
+public class Paddle implements KeyListener
 {
     int dy, x, y, width, height;
     
@@ -26,11 +25,10 @@ public class Paddle extends JComponent implements KeyListener
         keyPressed(e);
     }
     
-    public void paintComponent(Graphics g)
+    public void paint(Graphics g)
     {
-        Graphics2D g2 = (Graphics2D) g;
-        g2.setColor(Color.RED);
-        g2.fillRect(x, y, width, height);
+        g.setColor(Color.RED);
+        g.fillRect(x, y, width, height);
     }
     
     public void keyPressed(KeyEvent e)

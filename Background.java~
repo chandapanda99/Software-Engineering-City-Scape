@@ -14,9 +14,6 @@ public class Background
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.add(pad);
         
-        pad.getInputMap(JComponent.WHEN_IN_FOCUSED_WINDOW).put(KeyStroke.getKeyStroke("UP"), "move up");
-        pad.getActionMap().put("move up", new MoveY(-1));
-        
         
         RectangleComponent building1 = new RectangleComponent(98, 90, 50, 410, 0, 0, 0);
         frame.add(building1);

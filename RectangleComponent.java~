@@ -6,7 +6,7 @@ import javax.swing.JComponent;
 */
 public class RectangleComponent extends JComponent
 {
-    int x, y, w, h, r, g, b;
+    int x, i, w, h, r, g, b;
     Rectangle box;
     public RectangleComponent(int v, int i, int width, int height, int red, int green, int blue)
     {
