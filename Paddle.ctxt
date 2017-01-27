@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Paddle()
+comment1.params=p\ b\ e
+comment1.target=void\ update(Pong,\ Ball,\ java.awt.event.KeyEvent)
+comment2.params=g
+comment2.target=void\ paint(java.awt.Graphics)
+comment3.params=e
+comment3.target=void\ keyPressed(java.awt.event.KeyEvent)
+comment4.params=e
+comment4.target=void\ keyReleased(java.awt.event.KeyEvent)
+comment5.params=e
+comment5.target=void\ keyTyped(java.awt.event.KeyEvent)
+comment6.params=b
+comment6.target=void\ checkForCollision(Ball)
+numComments=7
