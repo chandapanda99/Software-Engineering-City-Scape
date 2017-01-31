@@ -11,13 +11,12 @@ public class InputHandler implements KeyListener {
 		int keyCode = e.getKeyCode();
 
 		// Player 1 controls
-		if (keyCode == KeyEvent.VK_UP) {
+		if (keyCode == KeyEvent.VK_W) {
 			Game.player.goingUp = true;
 		}
-		else if (keyCode == KeyEvent.VK_DOWN) {
+		else if (keyCode == KeyEvent.VK_S) {
 			Game.player.goingDown = true;
 		}
-
 		// Other controls
 		if (keyCode == KeyEvent.VK_ESCAPE) {
 			System.exit(0);

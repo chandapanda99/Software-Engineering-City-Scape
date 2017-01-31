@@ -10,7 +10,6 @@ public class InputHandler implements KeyListener {
 	public void keyPressed(KeyEvent e) {
 		int keyCode = e.getKeyCode();
 
-		// Player 1 controls
 		if (keyCode == KeyEvent.VK_W) {
 			Game.player.goingUp = true;
 		}
@@ -18,15 +17,6 @@ public class InputHandler implements KeyListener {
 			Game.player.goingDown = true;
 		}
 
-		// Player 2 controls
-		if (keyCode == KeyEvent.VK_UP) {
-			Game.ai.goingUp = true;
-		}
-		else if (keyCode == KeyEvent.VK_DOWN) {
-			Game.ai.goingDown = true;
-		}
-
-		// Other controls
 		if (keyCode == KeyEvent.VK_ESCAPE) {
 			System.exit(0);
 		}
@@ -35,22 +25,12 @@ public class InputHandler implements KeyListener {
 	public void keyReleased(KeyEvent e) {
 		int keyCode = e.getKeyCode();
 
-		// Player 1 controls
 		if (keyCode == KeyEvent.VK_W) {
 			Game.player.goingUp = false;
 		}
 		else if (keyCode == KeyEvent.VK_S) {
 			Game.player.goingDown = false;
 		}
-
-		// Player 2 controls
-		if (keyCode == KeyEvent.VK_UP) {
-			Game.ai.goingUp = false;
-		}
-		else if (keyCode == KeyEvent.VK_DOWN) {
-			Game.ai.goingDown = false;
-		}
-
 	}
 
 	public void keyTyped(KeyEvent e) {
