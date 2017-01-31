@@ -1,18 +1,4 @@
 #BlueJ class context
-comment0.params=
-comment0.target=void\ Pong()
-comment1.params=
-comment1.target=void\ init()
-comment2.params=
-comment2.target=void\ start()
-comment3.params=
-comment3.target=void\ run()
-comment4.params=
-comment4.target=void\ stop()
-comment5.params=
-comment5.target=void\ destroy()
-comment6.params=g
-comment6.target=void\ update(java.awt.Graphics)
-comment7.params=g
-comment7.target=void\ paint(java.awt.Graphics)
-numComments=8
+comment0.params=args
+comment0.target=void\ main(java.lang.String[])
+numComments=1

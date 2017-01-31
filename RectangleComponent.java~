@@ -1,46 +1,33 @@
-import java.awt.*;
-import javax.swing.JComponent;
 
-/*
-   A component that draws two rectangles.
-*/
-public class RectangleComponent extends JComponent
+/**
+ * Write a description of class RectangleComponent here.
+ * 
+ * @author (your name) 
+ * @version (a version number or a date)
+ */
+public class RectangleComponent
 {
-    int x, i, w, h, r, g, b;
-    Rectangle box;
-    public RectangleComponent(int v, int i, int width, int height, int red, int green, int blue)
-    {
-        this.x = v;
-        this.y = i;
-        this.w = width;
-        this.h = height;
-        this.r = red;
-        this.g = green;
-        this.b = blue;
-        box = new Rectangle(x, y, w, h);
-    }
-    
-    public void paintComponent(Graphics g)
-    {  
-       // Recover Graphics2D
-       Graphics2D g2 = (Graphics2D) g;
+    // instance variables - replace the example below with your own
+    private int x;
 
-       // Construct a rectangle and draw it
-       //Rectangle box = new Rectangle(5, 10, 20, 30);
-       g2.setColor(new Color(this.r, this.g, this.b));
-       g2.fill(box);
-
-       // Move rectangle 15 units to the right and 25 units down
-       //box.translate(35, 25);
- 
-       // Draw moved rectangle
-    }
-    
-    public void nextFrame()
+    /**
+     * Constructor for objects of class RectangleComponent
+     */
+    public RectangleComponent()
     {
-        //update the objects in the cityscape so they are animated
-        //box.translate(5, 5);
-        //request that the java RunTime repaints this component by invoking its paintComponent
-        repaint();
+        // initialise instance variables
+        x = 0;
+    }
+
+    /**
+     * An example of a method - replace this comment with your own
+     * 
+     * @param  y   a sample parameter for a method
+     * @return     the sum of x and y 
+     */
+    public int sampleMethod(int y)
+    {
+        // put your code here
+        return x + y;
     }
 }

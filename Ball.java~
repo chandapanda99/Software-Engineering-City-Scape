@@ -5,7 +5,7 @@ import java.util.*;
 
 public class Ball {
     int size = 30;
-    int speed = 21;
+    int speed = 19;
     int vx, vy;
     Random generator = new Random();
     int x = generator.nextInt(300) + 50;
