@@ -4,8 +4,8 @@ import java.awt.Rectangle;
 import java.util.*;
 
 public class Ball {
-    int size = 30;
-    int speed = 21;
+    int size = 40;
+    int speed = 30;
     int vx, vy;
     Random generator = new Random();
     int x = generator.nextInt(300) + 50;

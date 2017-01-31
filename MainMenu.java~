@@ -8,10 +8,10 @@ import javax.swing.JFrame;
 public class MainMenu extends JFrame {
     private static final long serialVersionUID = 1L;
 
-    int screenWidth = 400;
-    int screenHeight = 400;
+    int screenWidth = 600;
+    int screenHeight = 600;
 
-    int buttonWidth = 300;
+    int buttonWidth = 500;
     int buttonHeight = 30;
 
     JButton Play, Quit;
@@ -35,7 +35,6 @@ public class MainMenu extends JFrame {
         setLocationRelativeTo(null);
         setSize(screenWidth, screenHeight);
         setTitle("Speed Pong! Menu");
-        drawString("Don't play if prone to seizures");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setBackground(Color.BLACK);
         setResizable(false);
@@ -43,7 +42,7 @@ public class MainMenu extends JFrame {
 
     private void addButtons() {
         Play = new JButton("Play Speed Pong!");
-        Quit = new JButton("Don't Play Speed Pong!");
+        Quit = new JButton("Don't Play Speed Pong! if you are prone to seizures. Click to quit");
     }
 
     private void addActions() {

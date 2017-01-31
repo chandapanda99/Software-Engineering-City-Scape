@@ -9,7 +9,7 @@ public class MainMenu extends JFrame {
     private static final long serialVersionUID = 1L;
 
     int screenWidth = 600;
-    int screenHeight = 600;
+    int screenHeight = 300;
 
     int buttonWidth = 500;
     int buttonHeight = 30;
