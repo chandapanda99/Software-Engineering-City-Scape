@@ -46,7 +46,8 @@ public class Game extends Canvas implements Runnable {
     public void start() {
         gameRunning = true;
         new Thread(this).start();
-                int h1 = 95;
+        
+        int h1 = 95;
         RectangleComponent building1 = new RectangleComponent(98, 90, 50, 410, 0, 0, 0);
         while (h1 < 500)
         {
@@ -130,7 +131,7 @@ public class Game extends Canvas implements Runnable {
         frame.setVisible(true);
         frame.setResizable(false);
         frame.setBackground(Color.GREEN);
-        frame.setTitle("SpePong!");
+        frame.setTitle("Speed Pong!");
         frame.setLocationRelativeTo(null);
 
         IH = new InputHandler(this);

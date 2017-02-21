@@ -11,7 +11,6 @@ public class Background
         frame.setTitle("PONG!");
         frame.getContentPane().setBackground(Color.CYAN);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        
         int h1 = 95;
         RectangleComponent building1 = new RectangleComponent(98, 90, 50, 410, 0, 0, 0);
         while (h1 < 500)

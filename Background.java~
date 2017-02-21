@@ -1,6 +1,5 @@
 import javax.swing.JFrame;
 import java.awt.*;
-import java.util.*;
 
 public class Background
 {
@@ -8,12 +7,11 @@ public class Background
     {
         JFrame frame = new JFrame();
         
-        Random generator = new Random();
         frame.setSize(1710, 910);
         frame.setTitle("PONG!");
         frame.getContentPane().setBackground(Color.CYAN);
+        new MainMenu();
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        
         int h1 = 95;
         RectangleComponent building1 = new RectangleComponent(98, 90, 50, 410, 0, 0, 0);
         while (h1 < 500)
