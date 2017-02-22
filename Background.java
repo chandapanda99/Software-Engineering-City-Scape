@@ -71,6 +71,10 @@ public class Background
         frame.add(building5);
         frame.setVisible(true);
         
+        RectangleComponent road = new RectangleComponent(0, 550, 2147483647, 75, 0, 0, 0);
+        frame.add(road);
+        frame.setVisible(true);
+        
         RectangleComponent ground = new RectangleComponent(0, 500, 2147483647, 21474, 16, 79, 0);
         frame.add(ground);
         frame.setVisible(true);

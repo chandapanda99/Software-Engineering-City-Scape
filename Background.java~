@@ -10,7 +10,6 @@ public class Background
         frame.setSize(1710, 910);
         frame.setTitle("PONG!");
         frame.getContentPane().setBackground(Color.CYAN);
-        new MainMenu();
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         int h1 = 95;
         RectangleComponent building1 = new RectangleComponent(98, 90, 50, 410, 0, 0, 0);
@@ -70,6 +69,10 @@ public class Background
             h5 += 15;
         }
         frame.add(building5);
+        frame.setVisible(true);
+        
+        RectangleComponent road = new RectangleComponent(0, 600, 2147483647, 75, 0, 0, 0);
+        frame.add(road);
         frame.setVisible(true);
         
         RectangleComponent ground = new RectangleComponent(0, 500, 2147483647, 21474, 16, 79, 0);

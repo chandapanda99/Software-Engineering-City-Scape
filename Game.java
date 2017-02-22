@@ -107,6 +107,8 @@ public class Game extends Canvas implements Runnable {
         frame.add(building5);
         frame.setVisible(true);
         
+        RectangleComponent road = new RectangleComponent(0, 700, 2147483647, 34, 33, 8, 0);
+        
         RectangleComponent ground = new RectangleComponent(0, 500, 2147483647, 21474, 16, 79, 0);
         frame.add(ground);
         frame.setVisible(true);
